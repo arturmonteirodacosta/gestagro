@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link  href="estilo.css" rel="stylesheet">
+</head>
+<body>
+  <div class="fundo">
+    <img src="fundo.avif">
+  </div>
+<div class="container mx-auto pedido">
+    <h2 class="text-center mb-4">Novo Pedido de Insumos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="produto" class="form-label">Produto</label>
+        <select class="form-select" id="produto" required>
+          <option value="" disabled selected>Selecione um produto</option>
+          <option value="fertilizante">Fertilizante</option>
+          <option value="semente">Semente</option>
+          <option value="pesticida">Pesticida</option>
+          <option value="adubo">Adubo</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="quantidade" class="form-label">Quantidade</label>
+        <input type="number" class="form-control" id="quantidade" min="1" value="1" required>
+      </div>
+      <button type="button" class="btn btn-primary w-100" id="adicionarCarrinho">Adicionar ao Carrinho</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+    body {
+      background: linear-gradient(135deg, #0ABAB5 0%, #ADEED9 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+    .login-container {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    .btn-agri {
+      background-color: #48768a;
+      border-color: #48768a;
+    }
+    .btn-agri:hover {
+      background-color: #2e4c59;
+      border-color: #2e4c59;
+    }
+    .text-tech {
+      color: #007bff;
+    }

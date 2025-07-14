@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.dashboard-container {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima da imagem */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.column {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo das colunas com leve transparência */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1;
+    min-width: 300px;
+}
+.btn-agri {
+    background-color: #48768a;
+    border-color: #48768a;
+}
+.btn-agri:hover {
+    background-color: #2e4c59;
+    border-color: #2e4c59;
+}
+.text-tech {
+    color: #007bff;
+}
+.tab-content {
+    margin-top: 15px;
+}
+.verde{
+    color: darkgreen;
+}
+.amarelo{
+    color: yellowgreen;
+}
+.vermelho{
+    color: darkred;
+}
+.acordion{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+}
+.fundo{
+    /*background-image: url('fundo.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(173, 238, 217, 0.2); /* Cor de fallback com opacidade */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+}
+.destaque{
+    border: 1px solid green;
+    background-color: lightgreen;
+    font-weight: 700;
+    text-align: center;
+}
+.destaque_ruim{
+    border: 1px solid red;
+    background-color: lightcoral;
+    font-weight: 700;
+    text-align: center;
+}
+/*
+.btn-agri {
+      background-color: #48768a;
+      border-color: #48768a;
+}
+.btn-agri:hover {
+    background-color: #2e4c59;
+    border-color: #2e4c59;
+}*/
+.text-tech {
+    color: #007bff;
+}
+.pedido{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    padding: 50px;
+}
+
+.cadastro{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    padding: 50px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* Verde do WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  .whatsapp-float i {
+    color: #fff;
+    font-size: 24px;
+  }

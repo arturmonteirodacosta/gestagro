@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TriFron Agro Dashboard</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link  href="estilo.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="fundo">
+    <img src="fundo.avif">
+  </div>
+  <div class="container">
+    <div class="column mb-4 p-4">
+      <h2 class="text-center display-3"><b>GestAgro</b></h2>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100 justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Relatórios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fornecedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Produtores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Indicadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+    <div class="dashboard-container">
+
+      <!-- Coluna Meio - DRE -->
+      <div class="column">
+        <h4>Demonstrativo</h4>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="receita-tab" data-bs-toggle="tab" data-bs-target="#receita" type="button" role="tab">Atual</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="despesa-tab" data-bs-toggle="tab" data-bs-target="#despesa" type="button" role="tab">Otimista</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="resultado-tab" data-bs-toggle="tab" data-bs-target="#resultado" type="button" role="tab">Pessimista</button>
+          </li>
+        </ul>
+<!-- CONTEúDO -->
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="receita" role="tabpanel">
+
+          <ul class="list-group">
+            <li class="list-group-item destaque">Resultado - R$26.000,00</li>
+          </ul>
+
+            <hr>
+<!-- ACORDIÃO-->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Receita Bruta - R$300.000,00
+                </p>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    (-) Deduções - R$9.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">R$5.000,00 - Umidade</li>
+                      <li class="list-group-item">R$2.000,00 - Impurezas</li>
+                      <li class="list-group-item">R$2.000,00 - Qualidade</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Receita Líquida - R$291.000,00
+                </p>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    (-) Custos - R$65.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">R$25.000,00 - Semente</li>
+                      <li class="list-group-item">R$15.000,00 - Adubo</li>
+                      <li class="list-group-item">R$10.000,00 - Fungicida</li>
+                      <li class="list-group-item">R$10.000,00 - Inseticida</li>
+                      <li class="list-group-item">R$5.000,00 - Regulação Solo</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Lucro Bruto - R$226.000,00
+                </p>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    (-) Resultado Fin. - R$200.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                     <ul class="list-group">
+                      <li class="list-group-item">R$150.000,00 - Contrato 1</li>
+                      <li class="list-group-item">R$50.000,00 - Contrato 2</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    <strong>Resultado - R$26.000,00</strong>
+                </p>
+              </div>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <a href="dre.pdf"><button class="btn btn-primary" type="button">Exportar PDF</button></a>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="tab-pane fade" id="despesa" role="tabpanel">
+            
+            <ul class="list-group">
+            <li class="list-group-item destaque">Resultado - R$76.000,00</li>
+          </ul>
+
+            <hr>
+<!-- ACORDIÃO-->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Receita Bruta - R$300.000,00
+                </p>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    (-) Deduções - R$9.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">R$5.000,00 - Umidade</li>
+                      <li class="list-group-item">R$2.000,00 - Impurezas</li>
+                      <li class="list-group-item">R$2.000,00 - Qualidade</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Receita Líquida - R$291.000,00
+                </p>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    (-) Custos - R$65.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">R$25.000,00 - Semente</li>
+                      <li class="list-group-item">R$15.000,00 - Adubo</li>
+                      <li class="list-group-item">R$10.000,00 - Fungicida</li>
+                      <li class="list-group-item">R$10.000,00 - Inseticida</li>
+                      <li class="list-group-item">R$5.000,00 - Regulação Solo</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Lucro Bruto - R$226.000,00
+                </p>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    (-) Resultado Fin. - R$150.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                     <ul class="list-group">
+                      <li class="list-group-item">R$100.000,00 - Contrato 1</li>
+                      <li class="list-group-item">R$50.000,00 - Contrato 2</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    <strong>Resultado - R$76.000,00</strong>
+                </p>
+              </div>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <a href="dre.pdf"><button class="btn btn-primary" type="button">Exportar PDF</button></a>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="tab-pane fade" id="resultado" role="tabpanel">
+            
+<ul class="list-group">
+            <li class="list-group-item destaque_ruim">Resultado - (-)R$36.000,00</li>
+          </ul>
+
+            <hr>
+<!-- ACORDIÃO-->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Receita Bruta - R$300.000,00
+                </p>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    (-) Deduções - R$9.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">R$5.000,00 - Umidade</li>
+                      <li class="list-group-item">R$2.000,00 - Impurezas</li>
+                      <li class="list-group-item">R$2.000,00 - Qualidade</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Receita Líquida - R$291.000,00
+                </p>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    (-) Custos - R$65.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">R$25.000,00 - Semente</li>
+                      <li class="list-group-item">R$15.000,00 - Adubo</li>
+                      <li class="list-group-item">R$10.000,00 - Fungicida</li>
+                      <li class="list-group-item">R$10.000,00 - Inseticida</li>
+                      <li class="list-group-item">R$5.000,00 - Regulação Solo</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    Lucro Bruto - R$226.000,00
+                </p>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    (-) Resultado Fin. - R$250.000,00
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    
+                     <ul class="list-group">
+                      <li class="list-group-item">R$200.000,00 - Contrato 1</li>
+                      <li class="list-group-item">R$50.000,00 - Contrato 2</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                <p class="accordion-header acordion">
+                    <strong>Resultado - (-)R$36.000,00</strong>
+                </p>
+              </div>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <a href="dre.pdf"><button class="btn btn-primary" type="button">Exportar PDF</button></a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+<!-- Coluna Esquerda - Cotações -->
+      <div class="column">
+        <h4>Cotações</h4>
+
+        <!-- COMPRA E VENDA-->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Venda</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Compra</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <!-- VENDA -->
+            <select name="cultura" id="cultura" class="col-8">
+              <option value="Soja">Soja</option>
+              <option value="Milho">Milho</option>
+              <option value="Trigo">Trigo</option>
+            </select>
+
+            <ul class="list-group mt-4">
+              <li class="list-group-item"><span class="verde"><b>R$135</b></span> - Insuagro</li>
+              <li class="list-group-item"><span class="amarelo"><b>R$133</b></span> - BRF</li>
+              <li class="list-group-item"><span class="amarelo"><b>R$132</b></span> - Copagril</li>
+              <li class="list-group-item"><span class="vermelho"><b>R$130</b></span> - Coperativa Lar</li>
+            </ul>
+          <!-- MODAL CARRINHO-->        
+          <div class="col-6 mx-auto pt-4">
+            <a href="pedidos.html"><button class="btn btn-primary">Solicitar Orçamento</button></a>
+          </div>
+          
+
+          
+          </div>
+
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <!-- VENDA -->
+            <select name="cultura" id="cultura" class="col-8">
+              <option value="Soja">Herbicida</option>
+              <option value="Milho">Glifosato</option>
+              <option value="Trigo">Brovonil</option>
+            </select>
+
+            <ul class="list-group mt-4">
+              <li class="list-group-item"><span class="verde"><b>R$17,50</b></span> - Insuagro</li>
+              <li class="list-group-item"><span class="amarelo"><b>R$18,00</b></span> - BRF</li>
+              <li class="list-group-item"><span class="amarelo"><b>R$19,00</b></span> - Copagril</li>
+              <li class="list-group-item"><span class="vermelho"><b>R$19,25</b></span> - Coperativa Lar</li>
+            </ul>
+          <!-- MODAL CARRINHO-->        
+          <div class="col-6 mx-auto pt-4">
+            <a href="pedidos.html"><button class="btn btn-primary">Solicitar Orçamento</button></a>
+          </div>
+
+          </div>
+
+
+          
+        </div>
+
+
+        
+
+
+      <!-- Coluna Direita - Clima -->
+      <div class="column">
+        <h4>Clima</h4>
+        <p><strong>Local:</strong> Realeza, PR</p>
+        <p><strong>Temperatura:</strong> [Carregando...]</p>
+        <p><strong>Precipitação:</strong> [Carregando...]</p>
+        <p><strong>Umidade:</strong> [Carregando...]</p>
+        <!-- Placeholder para dados dinâmicos via API -->
+        <div><a href="https://meteorologia.emparn.rn.gov.br/relatorios/relatorios-pluviometricos">Histórico Pluviométrico</a></div>
+        <hr class="m-4">
+        <h4 class="mt-3">Cote Seu Seguro</h4>
+        <img style="max-width: 300px;" src="seguros.jpg" class="m-3">
+      </div>
+    </div>
+  </div>
+  <a href="https://wa.me/5545987654321?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20com%20o%20TriFron%20Agro%21" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
